@@ -1,12 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import heroclixImg from "@/assets/projects/heroclix-marketplace.png";
-import heroLeagueImg from "@/assets/projects/hero-league-hub.png";
-import tiAutomacaoImg from "@/assets/projects/ti-automacao.png";
-import checkspeechImg from "@/assets/projects/checkspeech.png";
-import racquelImg from "@/assets/projects/racquel-leads.png";
-import sdGuiaImg from "@/assets/projects/sd-guia.png";
+import heroclixImg from "@/assets/projects/arena_capa.png";
+import heroLeagueImg from "@/assets/projects/calandario_capa.png";
+import tiAutomacaoImg from "@/assets/projects/ti_capa.png";
+import checkspeechImg from "@/assets/projects/chackspeech_capa.png";
+import racquelImg from "@/assets/projects/racquel_capa.png";
+import sdGuiaImg from "@/assets/projects/sd_capa.png";
 
 export const Projects = () => {
   const projects = [
