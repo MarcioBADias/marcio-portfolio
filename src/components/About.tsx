@@ -7,12 +7,12 @@ export const About = () => {
     {
       icon: Code,
       title: "Front-End",
-      items: ["HTML", "CSS", "JavaScript", "React JS", "Bootstrap"],
+      items: ["HTML", "CSS", "JavaScript", "React JS", "Bootstrap", "Styled-Components", "Tailwind CSS"],
     },
     {
       icon: Server,
       title: "Back-End",
-      items: ["Node JS", "API Restful", "MongoDB"],
+      items: ["Seupabase", "Node JS", "API Restful", "MongoDB"],
     },
     {
       icon: Smartphone,
@@ -39,7 +39,7 @@ export const About = () => {
           </div>
 
           <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto leading-relaxed">
-            Desenvolvedor Front-End Jr com experiência em React.js, Node.js e MongoDB, focado em criar 
+            Desenvolvedor Front-End Jr com experiência em React.js, Supabase, Node.js e MongoDB, focado em criar 
             interfaces intuitivas e responsivas. Atuo no desenvolvimento de aplicações web, integração com 
             APIs e implementação de funcionalidades interativas. Tenho experiência com CRUD, consumo de 
             APIs externas e estilização com styled-components. Busco aprimorar minhas habilidades e 

@@ -10,6 +10,15 @@ import sdGuiaImg from "@/assets/projects/sd_capa.png";
 
 export const Projects = () => {
   const projects = [
+    
+    {
+      title: "TI Automação Comercial",
+      description: "Landing page para empresa de automação comercial",
+      github: "https://github.com/MarcioBADias/ti-automacao-comercial",
+      demo: "https://ti-leadpage.netlify.app/",
+      tags: ["Landing Page", "Business"],
+      image: tiAutomacaoImg,
+    },
     {
       title: "Heroclix Marketplace",
       description: "Marketplace para colecionadores de Heroclix com sistema de compra e venda",
@@ -25,14 +34,6 @@ export const Projects = () => {
       demo: "https://calendariohc.netlify.app/",
       tags: ["React", "Calendar", "Events"],
       image: heroLeagueImg,
-    },
-    {
-      title: "TI Automação Comercial",
-      description: "Landing page para empresa de automação comercial",
-      github: "https://github.com/MarcioBADias/ti-automacao-comercial",
-      demo: "https://ti-leadpage.netlify.app/",
-      tags: ["Landing Page", "Business"],
-      image: tiAutomacaoImg,
     },
     {
       title: "CheckSpeech AI",

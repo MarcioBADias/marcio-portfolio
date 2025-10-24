@@ -30,7 +30,7 @@ export const Hero = () => {
           Desenvolvedor Front-End
         </p>
         <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
-          Criando interfaces intuitivas e responsivas com React.js, Node.js e MongoDB
+          Criando interfaces intuitivas e responsivas com React.js, Supabase, Node.js e MongoDB
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
