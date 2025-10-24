@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 export const Hero = () => {
@@ -51,13 +51,6 @@ export const Hero = () => {
             Ver Currículo
           </Button>
         </div>
-
-        <button
-          onClick={() => scrollToSection("sobre")}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
-        >
-          <ArrowDown className="h-8 w-8 text-primary" />
-        </button>
       </div>
     </section>
   );

@@ -1,8 +1,11 @@
 import { ThemeToggle } from "./ThemeToggle";
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +19,7 @@ export const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
     }
   };
 
@@ -56,8 +60,50 @@ export const Navbar = () => {
             </button>
           </div>
 
-          <ThemeToggle />
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+            <div className="flex flex-col gap-4">
+              <button
+                onClick={() => scrollToSection("sobre")}
+                className="text-sm font-medium hover:text-primary transition-colors text-left"
+              >
+                Sobre
+              </button>
+              <button
+                onClick={() => scrollToSection("experiencia")}
+                className="text-sm font-medium hover:text-primary transition-colors text-left"
+              >
+                Experiência
+              </button>
+              <button
+                onClick={() => scrollToSection("projetos")}
+                className="text-sm font-medium hover:text-primary transition-colors text-left"
+              >
+                Projetos
+              </button>
+              <button
+                onClick={() => scrollToSection("contato")}
+                className="text-sm font-medium hover:text-primary transition-colors text-left"
+              >
+                Contato
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

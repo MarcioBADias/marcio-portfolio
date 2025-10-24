@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Server, Smartphone } from "lucide-react";
+import profileImg from "@/assets/profile.png";
 
 export const About = () => {
   const skills = [
@@ -27,7 +28,15 @@ export const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
             Sobre Mim
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-12"></div>
+          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
+
+          <div className="flex justify-center mb-8">
+            <img 
+              src={profileImg} 
+              alt="Márcio Breno Augusto Dias"
+              className="w-48 h-48 rounded-full object-cover border-4 border-primary"
+            />
+          </div>
 
           <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto leading-relaxed">
             Desenvolvedor Front-End Jr com experiência em React.js, Node.js e MongoDB, focado em criar 
